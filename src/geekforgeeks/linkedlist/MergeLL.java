@@ -1,7 +1,7 @@
 package geekforgeeks.linkedlist;
 
 public class MergeLL {
-	/* Merge Two sorter Linked List in m and n size into m+n size. */
+	/* Merge Two sorted Linked List in m and n size into m+n size. */
 
 	// This method returns the merged Linked List of m+n size.
 	public LinkedListNode merge(LinkedListNode head1, LinkedListNode head2) {
