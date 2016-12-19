@@ -39,7 +39,7 @@ public class MergeTwoSortedArray {
 			// at the end
 			// compare integers from 'a' and 'b'. if element in 'a' is smaller
 			// take from 'a' and increment counters.
-			if ((i < (m) && a[i] <= b[j]) || (j == n)) {
+			if ((i < m && a[i] <= b[j]) || (j == n)) {
 				temp[k] = a[i];
 				i++;
 				k++;

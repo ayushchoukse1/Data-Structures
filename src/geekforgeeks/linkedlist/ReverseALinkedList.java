@@ -13,26 +13,26 @@
 package geekforgeeks.linkedlist;
 
 public class ReverseALinkedList {
-
-	// This method reverses the linked list recursively
-	public static void reverseLinkedListRecursive(LinkedListNode current,
-			LinkedListNode[] head) {
-		if (current == null) {
-			return;
-		}
-		// base case
-		LinkedListNode next = current.getNext();
-		if (next == null) {
-			head[0] = current;
-			return;
-		}
-		reverseLinkedListRecursive(next, head);
-		// Make next node points to current node
-		next.setNext(current);
-		
-		// Remove existing link
-		current.setNext(null);
-	}
+	/*
+		// This method reverses the linked list recursively
+		public static void reverseLinkedListRecursive(LinkedListNode current,
+				LinkedListNode[] head) {
+			if (current == null) {
+				return;
+			}
+			// base case
+			LinkedListNode next = current.getNext();
+			if (next == null) {
+				head[0] = current;
+				return;
+			}
+			reverseLinkedListRecursive(next, head);
+			// Make next node points to current node
+			next.setNext(current);
+			
+			// Remove existing link
+			current.setNext(null);
+		}*/
 
 	// This method reverses the linked list Iteratively
 	public static LinkedListNode reverseListIterative(LinkedListNode head) {
@@ -57,5 +57,25 @@ public class ReverseALinkedList {
 			current = next;
 		}
 		return prev;
+	}
+
+	public void ReverseLLRecursive(LinkedListNode head, LinkedListNode[] LL) {
+
+		if (head == null) {
+			throw new NullPointerException("LinkedListNode is empty: ");
+		}
+		LinkedListNode next = head.getNext();
+
+		if (next == null) {
+			LL[0] = head;
+			return;
+		}
+		ReverseLLRecursive(next, LL);
+
+		next.setNext(head);
+		head.setNext(null);
+
+		return;
+
 	}
 }
