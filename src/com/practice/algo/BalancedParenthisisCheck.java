@@ -44,7 +44,7 @@ public class BalancedParenthisisCheck {
 	}
 
 	public static void main(String[] args) {
-		String str = "([{}])";
+		String str = "([)]";
 		if (str.isEmpty()) {
 			System.out.println("Empty String");
 			return;
