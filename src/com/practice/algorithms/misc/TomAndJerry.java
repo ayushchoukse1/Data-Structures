@@ -1,6 +1,6 @@
-package com.practice.algorithms;
+package com.practice.algorithms.misc;
 
-public class TomAndJerry2 {
+public class TomAndJerry {
 	int count = 0;
 	int finalXPostion = 0, finalYPosition = 0;
 
@@ -18,7 +18,7 @@ public class TomAndJerry2 {
 	}
 
 	public static void main(String[] args) {
-		TomAndJerry2 object = new TomAndJerry2();
+		TomAndJerry object = new TomAndJerry();
 		int[][] maze = new int[][] { { 1, 1, 0 }, { 0, 1, 0 }, { 0, 1, 1 } };
 		System.out.println(object.SolveMaze(maze, 3, 2));
 	}
@@ -37,6 +37,7 @@ public class TomAndJerry2 {
 		}
 		// print solution.
 		print(solution);
+		System.out.println(count);
 		return true;
 	}
 	/*public static int minMoves(int[][] maze, int x, int y) {
@@ -58,6 +59,7 @@ public class TomAndJerry2 {
 		if (isSafe(maze, startX, startY) == true) {
 
 			solution[startX][startY] = 1;
+			count++;
 			// check same method for left cell block
 			if (SolveMazeUtil(maze, startX + 1, startY, solution)) {
 				return true;
@@ -70,6 +72,7 @@ public class TomAndJerry2 {
 			// if none of the above moves are working then backtrack and unmark
 			// startX and StartY to 0 to indicate that there is no path.
 			solution[startX][startY] = 0;
+			count--;
 			return false;
 		}
 

@@ -1,4 +1,4 @@
-package com.practice.algorithms;
+package com.practice.algorithms.misc;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;

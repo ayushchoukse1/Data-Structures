@@ -1,4 +1,4 @@
-package com.practice.algorithms;
+package com.practice.algorithms.misc;
 
 import java.io.BufferedInputStream;
 import java.io.File;

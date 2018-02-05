@@ -1,4 +1,4 @@
-package com.practice.algorithms;
+package com.practice.algorithms.misc;
 
 import java.io.File;
 import java.io.FileInputStream;

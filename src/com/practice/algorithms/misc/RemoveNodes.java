@@ -1,4 +1,4 @@
-package com.practice.algorithms;
+package com.practice.algorithms.misc;
 
 import com.practice.algorithms.linkedlist.LinkedList;
 import com.practice.algorithms.linkedlist.LinkedListNode;
