@@ -66,13 +66,14 @@ public class Subsets {
 
 	private List<Integer> printOutput(int[] result, int len) {
 		List<Integer> temp = new ArrayList<Integer>();
-		for (int i = 0; i < len; i++) {
+		for (int i = 0; i < len; i++) { 
 			temp.add(result[i]);
 		}
 		return temp;
 	}
 
 	public static void main(String[] args) {
+	
 		int[] nums = { 1,2,3};
 		Subsets ss = new Subsets();
 		System.out.println(ss.subsets(nums));
