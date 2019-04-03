@@ -13,5 +13,4 @@ public class ReverseLL {
 		}
 		return previous;
 	}
-
 }

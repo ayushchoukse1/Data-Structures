@@ -185,7 +185,7 @@ public class Graph {
 				queue.add(child);
 			}
 		}
-		// reset the visited counter.
+		// reset the visite	d counter.
 		resetFlags();
 	}
 
