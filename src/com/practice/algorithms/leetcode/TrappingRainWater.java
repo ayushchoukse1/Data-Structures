@@ -97,7 +97,7 @@ public class TrappingRainWater {
 	}
 
 	public static void main(String[] args) {
-		int[] heights1 = {5,5,1,7,1,1,5,2,7,6};
+		int[] heights1 = {5,2,4,2,6,2,3,5};
 		int[] heights = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
 		TrappingRainWater trw = new TrappingRainWater();
 //		trw.trap(heights);

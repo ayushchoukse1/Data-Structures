@@ -20,7 +20,7 @@ public class LongestCommonSubstring {
 
 	public static void main(String[] args) {
 		LongestCommonSubstring lcs = new LongestCommonSubstring();
-		System.out.println(lcs.lcs("abcdaf","454"));
+		System.out.println(lcs.lcs("afcdagu","abcdaf"));
 	}
 
 }
