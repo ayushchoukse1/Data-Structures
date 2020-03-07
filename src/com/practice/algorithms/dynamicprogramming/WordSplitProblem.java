@@ -50,12 +50,16 @@ public class WordSplitProblem {
 
 	public static void main(String[] args) {
 		Set<String> dictionary = new HashSet<String>();
-		dictionary.add("I");
-		dictionary.add("like");
-		dictionary.add("had");
-		dictionary.add("play");
-		dictionary.add("to");
-		String str = "Ihadliketoplay";
+		dictionary.add("the");
+		dictionary.add("hello");
+		dictionary.add("there");
+		dictionary.add("answer");
+		dictionary.add("any");
+		dictionary.add("by");
+		dictionary.add("world");
+		dictionary.add("their");
+		dictionary.add("abc");
+		String str = "theanswerbytheirhelloworld";
 		WordSplitProblem wps = new WordSplitProblem();
 		System.out.println(wps.wordSplit(str, dictionary));
 		// System.out.println(wps.breakWordDP(str, dictionary));

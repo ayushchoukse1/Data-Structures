@@ -9,14 +9,14 @@ public class BinaryTree {
 
 	public static void main(String args[]) {
 
-		BinaryTreeNode root = new BinaryTreeNode(1);
-		BinaryTreeNode two = new BinaryTreeNode(2);
-		BinaryTreeNode three = new BinaryTreeNode(3);
-		BinaryTreeNode four = new BinaryTreeNode(4);
-		BinaryTreeNode five = new BinaryTreeNode(5);
-		BinaryTreeNode six = new BinaryTreeNode(6);
-		BinaryTreeNode seven = new BinaryTreeNode(7);
-		BinaryTreeNode eight = new BinaryTreeNode(8);
+		BinaryTreeNode root = new BinaryTreeNode(10);
+		BinaryTreeNode two = new BinaryTreeNode(3);
+		BinaryTreeNode three = new BinaryTreeNode(6);
+		BinaryTreeNode four = new BinaryTreeNode(2);
+		BinaryTreeNode five = new BinaryTreeNode(1);
+		BinaryTreeNode six = new BinaryTreeNode(5);
+		BinaryTreeNode seven = new BinaryTreeNode(4);
+		// BinaryTreeNode eight = new BinaryTreeNode(8);
 
 		root.setLeft(two);
 		root.setRight(three);
@@ -24,7 +24,7 @@ public class BinaryTree {
 		two.setRight(five);
 		three.setLeft(six);
 		three.setRight(seven);
-		seven.setRight(eight);
+		// seven.setRight(eight);
 		System.out.println("PreOrder = ");
 		BinaryTree.preOrder(root);
 		System.out.println();
@@ -45,7 +45,8 @@ public class BinaryTree {
 		System.out.println("\nmax width = " + BinaryTree.maxWidthofBinaryTree(root));
 		BinaryTree.levelOrder(mirrorBinaryTree(root));
 		System.out.println("\nLCA = ");
-		System.out.println(BinaryTree.lowestCommonAncestor(root, four, eight).getData());
+		// System.out.println(BinaryTree.lowestCommonAncestor(root, four,
+		// eight).getData());
 	}
 
 	public static void preOrder(BinaryTreeNode root) { // DLR

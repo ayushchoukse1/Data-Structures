@@ -52,7 +52,7 @@ public class StringPermutation {
 
 	public static void main(String[] args) {
 		StringPermutation sp = new StringPermutation();
-		sp.permute("aabc");
+		sp.permute("attire");
 	}
 
 }

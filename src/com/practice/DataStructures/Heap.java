@@ -7,15 +7,9 @@ import java.util.NoSuchElementException;
 public class Heap {
 
 	/*
-	 * properties of heap
-	 * 1. has count;
-	 * 2. has capacity
-	 * 3. has a parent
-	 * 4. has a left child
-	 * 5. has a right child
-	 * 6. returns maxelement
-	 * 7. return minelement
-	 * 8. has heapType.
+	 * properties of heap 1. has count; 2. has capacity 3. has a parent 4. has a
+	 * left child 5. has a right child 6. returns maxelement 7. return minelement 8.
+	 * has heapType.
 	 */
 	private int cap = 0;
 	private int count = 0;
@@ -64,7 +58,6 @@ public class Heap {
 	}
 
 	private void percolateDown(int i) {
-		int k = i;
 		int max, l, r;
 		l = this.arr[2 * i + 1];
 		r = this.arr[2 * i + 2];
@@ -74,14 +67,13 @@ public class Heap {
 			max = this.arr[i];
 		}
 		if (r != 0 && r > max) {
-			max =r;
+			max = r;
 		}
 		if (max != this.arr[i]) {
 			int temp = this.arr[i];
-			this.arr[i]= max;
+			this.arr[i] = max;
 			max = temp;
 		}
 		percolateDown(max);
 	}
-
 }

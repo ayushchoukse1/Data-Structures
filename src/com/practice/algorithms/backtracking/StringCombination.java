@@ -48,7 +48,7 @@ public class StringCombination {
 
 	public static void main(String[] args) {
 		StringCombination sp = new StringCombination();
-		sp.combination("aabc");
+		sp.combination("attire");
 
 	}
 

@@ -25,8 +25,8 @@ public class StockBuySellKTransactions {
 
 	public static void main(String[] args) {
 		StockBuySellKTransactions sbt = new StockBuySellKTransactions();
-		int prices[] = { 2, 5, 7, 1, 4, 3, 1, 3 };
-		System.out.println(sbt.maxProfit(prices, 3));
+		int prices[] = { 7,1,5,3,6,4};
+		System.out.println(sbt.maxProfit(prices, 5));
 	}
 
 }

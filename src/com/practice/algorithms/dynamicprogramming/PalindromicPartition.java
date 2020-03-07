@@ -92,7 +92,7 @@ public class PalindromicPartition {
 
 	public static void main(String[] args) {
 		PalindromicPartition pp = new PalindromicPartition();
-		System.out.println(pp.minPartition("banana"));
+		System.out.println(pp.minPartition("noonabbad"));
 		System.out.println(pp.partition("banana"));
 	}
 

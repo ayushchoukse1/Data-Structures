@@ -24,7 +24,7 @@ public class ZerosAndOnesSorted {
                 int temp = nums[i];
                 nums[i]= nums[i-len];
                 nums[i-len]=temp;
-            }
+            } 
         }     
 		for (int i : nums) {
 			System.out.print(i);

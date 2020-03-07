@@ -38,7 +38,7 @@ public class MaximumSumIncreasingSubsequence {
 
 	public static void main(String[] args) {
 		MaximumSumIncreasingSubsequence miss = new MaximumSumIncreasingSubsequence();
-		int arr[] = { 4, 6, 1, 3, 8, 4, 6 };
+		int arr[] = { 5, 6, -24, 12, 10, 2, 3, 12, 5, 6, 35 };
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + " ");
 		}

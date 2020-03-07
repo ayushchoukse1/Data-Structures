@@ -16,7 +16,7 @@ class RectangleCoordinatesIn2DArray {
 	// Sample image
 	static int[][] image = { { 1, 1, 1, 1, 1, 1 }, { 1, 1, 1, 1, 1, 1 }, { 1, 1, 0, 0, 0, 1 }, { 1, 1, 0, 0, 0, 1 },
 			{ 1, 1, 1, 1, 1, 1 } };
-	
+
 	static int x = 0, y = 0;
 	// (x,y coords) [ 3, 2, 5, 3 ]
 	// row, column, width, height [ 2, 3, 3, 2 ]
@@ -24,22 +24,23 @@ class RectangleCoordinatesIn2DArray {
 	static int verticalCounter = 0;
 
 	public static void main(String[] args) {
+		for (int i = 0; i < image.length; i++) {
+			for (int j = 0; j < image[i].length; j++) {
+				System.out.print(image[i][j] + " ");
+			}
+			System.out.println();
+		}
 		RectangleCoordinatesIn2DArray sol = new RectangleCoordinatesIn2DArray();
 		sol.innerCircle(image);
 
 	}
 	/*
-	1. scan for the zeroes
-	2. if image[i][j]==0; then go to step 3.
-	3.. if image[i][j] is marked 
-	    false
-	    else if(not marked )
-	    mark the cell
-	    
-	    return true;
-	3. 
-	
-	*/
+	 * 1. scan for the zeroes 2. if image[i][j]==0; then go to step 3. 3.. if
+	 * image[i][j] is marked false else if(not marked ) mark the cell
+	 * 
+	 * return true; 3.
+	 * 
+	 */
 
 	public void innerCircle(int[][] image) {
 
@@ -101,7 +102,7 @@ class RectangleCoordinatesIn2DArray {
 					break;
 				}
 			}
-			
+
 		}
 	}
 }
